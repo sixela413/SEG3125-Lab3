@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'libre_baskervillebold';
-    src: url(/assets/librebaskerville-bold-webfont.woff2) format('woff2'),
-         url(/assets/librebaskerville-bold-webfont.woff) format('woff');
+    src: url(./assets/librebaskerville-bold-webfont.woff2) format('woff2'),
+         url(./assets/librebaskerville-bold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'libre_baskervilleregular';
-    src: url(/assets/librebaskerville-regular-webfont.woff2) format('woff2'),
-         url(/assets/librebaskerville-regular-webfont.woff) format('woff');
+    src: url(./assets/librebaskerville-regular-webfont.woff2) format('woff2'),
+         url(./assets/librebaskerville-regular-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
