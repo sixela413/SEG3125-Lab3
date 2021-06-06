@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'libre_baskervillebold';
+    src: url(/assets/librebaskerville-bold-webfont.woff2) format('woff2'),
+         url(/assets/librebaskerville-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url(/assets/librebaskerville-regular-webfont.woff2) format('woff2'),
+         url(/assets/librebaskerville-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+body {
+	min-width: 290px;
+	color:#422619;
+	font-family: 'libre_baskervilleregular', Arial, sans-serif;
+	line-height: 1.5;
+	margin: 0%;
+	padding: 0%;
+    background-color: #E9E2D8;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+	position: fixed;
+	min-width: 290px;
+	margin: -10px -10px 0px;
+	padding: 60px 0 50px 600px;
+	height: 70px;
+	width: 100%;
+	z-index: 200;
+    display: flex;
+    gap: 50px;
+    background-color: #E9E2D8;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+ .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: 'libre_baskervillebold', Arial, sans-serif;
+    font-size: 20px;
+    color: #95AD5C;
+
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: #422619;
+    font-size: 21px;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: #422619;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    padding: 0px 12px;
+  }
+
+  .main {
+    min-width: 290px;
+	  padding-top: 130px;
+    width:100%;
+    text-align: center;
+    height: 98vh;
+    font-family: 'libre_baskervilleregular', Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  h3 { 
+    font-family: 'libre_baskervilleregular', Arial, sans-serif;
+    font-size: 50px;
+    color: #95AD5C;
+    margin-bottom: -7px;
+  }
+  h2 { 
+    font-family: 'libre_baskervilleregular', Arial, sans-serif;
+    font-size: 35px;
+    color: #95AD5C;
+    margin-bottom: -7px;
+  }
+  p {
+    font-family: 'libre_baskervilleregular', Arial, sans-serif;
+    font-size: 25px;
+  }
+
+  #dietSelect {
+      background-color: #F0F0F2;
+      border: none;
+      height: 55px;
+      width: 30%;
+      border-radius: 10px;
+      margin-top: 15px;
+      padding:15px;
+      font-size: 18px;
+      color: #422619;
+  }
+
+  #dietSelect:focus {
+      outline: none;
+
+  }
+
+  #addCart {
+    border:none;
+    background-color: #95ad5c;
+    border-radius: 10px;
+    width: 300px;
+    font-family: 'libre_baskervillebold', Arial, sans-serif;
+    color:#e9e2d8;
+    height: 45px;
+    font-size: 18px;
+    
+  }
+
+ #addCart:hover {
+    width:305px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prod { 
+  text-align: left;
+  width: 500px;
+  padding-left: 800px;
+}
+
+/* FOOTER */
+.footer {
+  position:relative;
+  background: #95ad5c;
+  width:100%;
+  height: 150px;
+  
+  font-family: 'libre_baskervillebold', Arial, sans-serif;
+  font-size: 15px;
+  color:#e9e2d8;
+  text-align: center;
+  letter-spacing: 8px;
+  padding-top: 70px;
+}
+
+#home {
+  margin-bottom: 100vh;
+  padding-bottom: 100vh;
+}
+
+  /* Adapted from https://codepen.io/RajRajeshDn/pen/QWbjPrOp */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16%;
+}
+
+.container .option_item {
+  display: block;
+  position: relative;
+  width: 175px;
+  height: 55px;
+  margin: 60px;
+}
+
+.container .option_item .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.option_item .option_inner {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 45px 40px;
+  cursor: pointer;
+  color: #585c68;
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+}
+
+.option_item .option_inner .icon {
+  margin-bottom: 10px;
+}
+
+.option_item .option_inner .icon .fab {
+  font-size: 32px;
+}
+
+.option_item .option_inner .name {
+  user-select: none;
+}
+
+.option_item .checkbox:checked ~ .option_inner.lactose {
+  border-color: #eb9d98;
+  color: #422619;
+}
+
+.option_item .checkbox:checked ~ .option_inner.nut {
+  border-color: #eb9d98;
+  color: #422619;
+}
+
+.option_item .checkbox:checked ~ .option_inner.organic {
+  border-color: #eb9d98;
+  color: #422619;
+}
+
+.option_item .checkbox:checked ~ .option_inner.none {
+  border-color: #eb9d98;
+  color: #422619;
+}
+
+.option_item .option_inner .tickmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid;
+  border-color: #000 transparent transparent #000;
+  display: none;
+}
+
+.option_item .option_inner .tickmark:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 15px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+}
+
+.option_item .checkbox:checked ~ .option_inner .tickmark {
+  display: block;
+}
+
+.option_item .option_inner.lactose .tickmark {
+  border-color: #eb9d98 transparent transparent #eb9d98;
+}
+
+.option_item .option_inner.nut .tickmark {
+  border-color: #eb9d98 transparent transparent #eb9d98;
+}
+
+.option_item .option_inner.organic .tickmark {
+  border-color: #eb9d98 transparent transparent #eb9d98;
+}
+
+.option_item .option_inner.none .tickmark {
+  border-color: #eb9d98 transparent transparent #eb9d98;
+}

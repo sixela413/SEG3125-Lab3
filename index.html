@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <title>SEG3125 Lab 2 Grocery Store</title>
+    </head>
+    <body>
+        <!-- Tab links, each one with an onclick event associated with it -->
+        <div class="tab">
+            <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+            <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button> 
+            <img alt="logo" src="assets/logo[6163]33.png" height="100px"/>
+            <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+            <button class="tablinks" onclick="openInfo(event, 'Done')">Done</button>
+        </div>
+
+        <!-- Tab content -->
+        <div class="main">
+        
+        <div id="Home" class="tabcontent">
+            <h3>Welcome to All Fresh Grocery</h3>
+            <h2>Thank you for shopping local!</h2><br><br>
+            <img alt="heart" src="assets/06.png" height="200px" />
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        
+        </div>
+
+        <div id="Client" class="tabcontent">
+            <h3>Client Information</h3>
+            <p>Tell us a bit about yourself by identifying your food restriction:</p>
+
+            <!-- class="container" is adapted from https://codepen.io/RajRajeshDn/pen/QWbjPrOp -->
+            <div class="container">
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox" name="restrict" id="LactoseIntolerant"/>
+                  <div class="option_inner lactose">
+                    <div class="tickmark"></div>
+                    <div class="name">Lactose Free</div>
+                  </div>
+                </label>
+                <label class="option_item">
+                    <input type="checkbox" class="checkbox" name="restrict" id="NutAllergy"/>
+                    <div class="option_inner nut">
+                      <div class="tickmark"></div>
+                      <div class="name">Nut Free</div>
+                    </div>
+                  </label>
+                  <label class="option_item">
+                    <input type="checkbox" class="checkbox" name="restrict" id="Organic"/>
+                    <div class="option_inner organic">
+                      <div class="tickmark"></div>
+                      <div class="name">Organic ❀</div>
+                    </div>
+                  </label>
+                  <label class="option_item">
+                    <input type="checkbox" class="checkbox" name="restrict" id="None"/>
+                    <div class="option_inner none">
+                      <div class="tickmark"></div>
+                      <div class="name">No Food Restrictions</div>
+                    </div>
+                  </label>
+            </div>
+            <br><br><br><br><br>
+            <button id="addCart" type="button" class="block" onclick="populateListProductChoices()">Add Restriction</button><br><br>
+            <button class="tablinks" id="addCart" onclick="openInfo(event, 'Products')">Next Page</button>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <div id="Products" class="tabcontent">
+            <h3>Your targeted products</h3>
+            <p>We preselected products based on your food restrictions.</p>
+            <p>Choose items you wish to buy:</p>
+            <div class="prod"><div id="displayProduct"></div></div>
+            <br>
+            <button id="addCart" type="button" class="block" onclick="selectedItems()">
+                Add selected items to cart.
+            </button> <br><br>
+            <button class="tablinks" id="addCart" onclick="openInfo(event, 'Cart')"> Go to Cart</button>
+        </div>
+
+        <div id="Cart" class="tabcontent">
+            <h3>Cart</h3>
+            <p>Here is your cart.</p>
+            <div id="displayCart"></div>
+        </div>
+
+        <div id="Done" class="tabcontent">
+            <h3>Have a great day!</h3>
+            <h2>Thank you for shopping local!</h2>
+            <h2>-- All Fresh Gorcery</h2><br><br>
+            <img alt="heart" src="assets/06.png" height="200px" />
+        </div>
+
+        <script src="scripts/groceries.js"></script>
+        <script src="scripts/main.js"></script>
+    </div>
+
+    <div class="footer">
+        designed by yukii
+        <br />
+        ...
+        <br />
+        <br />
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+    </div>
+
+
+
+    </body>
+</html>
